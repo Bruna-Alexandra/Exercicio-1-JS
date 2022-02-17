@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos</title>
+</head>
+
+<body>
+    <script>
+        let ladoA = parseInt(prompt(
+            'Insira o comprimento do lado A do triângulo: '))
+        let ladoB = parseInt(prompt(
+            'Insira o comprimento do lado B do triângulo: '))
+        let ladoC = parseInt(prompt(
+            'Insira o comprimento do lado C do triângulo: '))
+
+        if (ladoA == ladoB && ladoA == ladoC) {
+            alert('Esse triângulo é equilátero.')
+        } else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+            alert('Esse triângulo é isóceles.')
+        } else {
+            alert('Esse triângulo é escaleno.')
+        }
+
+    </script>
+</body>
+
+</html>

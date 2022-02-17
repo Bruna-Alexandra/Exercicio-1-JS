@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var value1 = parseInt(prompt('Insira um valor inteiro: '))
+        var value2 = parseInt(prompt('Insira outro valor inteiro: '))
+
+        var old1 = value1
+        var old2 = value2
+        value1 = value2
+        value2 = old1
+
+        alert(
+            `Valores de X e Y:
+        Antigos: x=${old1}, y=${old2}
+        Novos: x=${value1}, y=${value2}`)
+
+    </script>
+</body>
+
+</html>
